@@ -20,15 +20,38 @@ public class BottomBar : MonoBehaviour {
         settingButton = transform.Find("Setting").GetComponent<UIButton>();
         taskButton = transform.Find("Task").GetComponent<UIButton>();
     }
-
     private void Start()
     {
         EventDelegate.Add(bagButton.onClick, OnBagBtnClick);
+        EventDelegate.Add(shopButton.onClick, OnShopBtnClick);
+        EventDelegate.Add(skillButton.onClick, OnSkillBtnClick);
+        EventDelegate.Add(combatButton.onClick, OnCombatBtnClick);
+        EventDelegate.Add(settingButton.onClick, OnSettingBtnClick);
+        EventDelegate.Add(taskButton.onClick, OnTaskBtnClick);
     }
-
 
     void OnBagBtnClick()
     {
         Knapsack._instance.Show();
+    }
+    void OnShopBtnClick()
+    {
+        
+    }
+    void OnSkillBtnClick()
+    {
+        
+    }
+    void OnCombatBtnClick()
+    {
+        
+    }
+    void OnSettingBtnClick()
+    {
+        
+    }
+    void OnTaskBtnClick()
+    {
+        TaskUI._instance.Show();
     }
 }

@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class TaskManager : MonoBehaviour {
 
+    public static TaskManager _instance;
+
     public TextAsset taskinfoText;
     ArrayList taskList = new ArrayList();
+
+    private void Awake()
+    {
+        _instance = this;
+        InitTask();
+    }
 
     /// <summary>初始化任务信息</summary>
     void InitTask()
@@ -42,5 +50,11 @@ public class TaskManager : MonoBehaviour {
             task.IdTranscript = int.Parse(proArray[9]);
             taskList.Add(task);
         }
+    }
+
+    /// <summary>返回任务列表信息</summary>
+    public ArrayList GetTaskList()
+    {
+        return taskList;
     }
 }
