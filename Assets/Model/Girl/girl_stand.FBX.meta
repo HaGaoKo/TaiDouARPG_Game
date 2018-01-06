@@ -114,7 +114,17 @@ ModelImporter:
     13700000: lod1
     13700002: lod2
     13700004: Object02
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #263'
+    second: {fileID: 2100000, guid: fae8fd0c090469d4d86c81b90237056b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #264'
+    second: {fileID: 2100000, guid: 8d85cef491209ca489fcaeffed952613, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -118,7 +118,17 @@ ModelImporter:
     11100000: //RootNode
     13700000: ce01_leg01
     13700002: lod1
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #41'
+    second: {fileID: 2100000, guid: 4a4d45475f3516b449bdf98fdd9b53b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #42'
+    second: {fileID: 2100000, guid: f235e4ebc639f6a448a3d7d7f5865691, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
