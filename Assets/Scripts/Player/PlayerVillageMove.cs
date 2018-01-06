@@ -18,7 +18,7 @@ public class PlayerVillageMove : MonoBehaviour {
         float v = Input.GetAxis("Vertical");
         Vector3 v3 = rig.velocity;
 
-        rig.velocity = new Vector3(-h, v3.y, -v)*speed;
+        rig.velocity = new Vector3(-h*speed, v3.y, -v*speed);
 
         if (Mathf.Abs(h) >0.05f||Mathf.Abs(v) > 0.05f)
         {

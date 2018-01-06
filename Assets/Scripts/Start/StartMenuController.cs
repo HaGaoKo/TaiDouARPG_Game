@@ -193,7 +193,8 @@ public class StartMenuController : MonoBehaviour
             sp.name = name;
             sp.count = count;
 
-            serverListGrid.AddChild(go.transform);
+            go.transform.parent = serverListGrid.transform;
+            //serverListGrid.AddChild(go.transform);
         }
 
         haveInitServerList = true;

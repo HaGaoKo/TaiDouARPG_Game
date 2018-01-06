@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KnapsackRole : MonoBehaviour
 {
-    UILabel nameLabel;
+    //UILabel nameLabel;
 
     KnapsackRoleEquip helmEquip;
     KnapsackRoleEquip closhEquip;
@@ -22,7 +22,7 @@ public class KnapsackRole : MonoBehaviour
 
     private void Awake()
     {
-        nameLabel = transform.Find("NameLabel").GetComponent<UILabel>();
+        //nameLabel = transform.Find("NameLabel").GetComponent<UILabel>();
         helmEquip = transform.Find("HelmSprite").GetComponent<KnapsackRoleEquip>();
         closhEquip = transform.Find("CloseSprite ").GetComponent<KnapsackRoleEquip>();
         weaponEquip = transform.Find("WeaponSprite").GetComponent<KnapsackRoleEquip>();

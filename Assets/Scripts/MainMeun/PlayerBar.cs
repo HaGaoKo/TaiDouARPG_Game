@@ -11,8 +11,8 @@ public class PlayerBar : MonoBehaviour {
     UILabel toughenLabel;
     UISlider energySlider;
     UISlider toughenSlider;
-    UIButton energyButton;
-    UIButton toughenButton;
+    //UIButton energyButton;
+    //UIButton toughenButton;
     UIButton headButton;
     private void Awake()
     {
@@ -23,8 +23,8 @@ public class PlayerBar : MonoBehaviour {
         energyLabel = energySlider.transform.Find("Label").GetComponent<UILabel>();
         toughenSlider = transform.Find("ToughenProgressBar").GetComponent<UISlider>();
         toughenLabel = toughenSlider.transform.Find("Label").GetComponent<UILabel>();
-        energyButton = transform.Find("EnergyPlusButton").GetComponent<UIButton>();
-        energyButton = transform.Find("ToughenPlusButton").GetComponent<UIButton>();
+        //energyButton = transform.Find("EnergyPlusButton").GetComponent<UIButton>();
+        //toughenButton = transform.Find("ToughenPlusButton").GetComponent<UIButton>();
         headButton = transform.Find("HeadButton").GetComponent<UIButton>();
     }
 

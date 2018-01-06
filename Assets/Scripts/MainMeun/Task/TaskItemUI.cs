@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TaskItemUI : MonoBehaviour {
 
-    Task task;
+    //Task task;
 
     UISprite tasktyprSprite;
     UISprite iconSprite;
@@ -35,7 +35,7 @@ public class TaskItemUI : MonoBehaviour {
 
     public void SetTask(Task task)
     {
-        this.task = task;
+        //this.task = task;
         switch (task.TaskType)
         {
             case TaskType.Main:

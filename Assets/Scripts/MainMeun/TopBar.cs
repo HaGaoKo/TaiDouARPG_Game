@@ -6,15 +6,15 @@ public class TopBar : MonoBehaviour {
 
     UILabel diamonLabel;
     UILabel coinLabel;
-    UIButton diamonButton;
-    UIButton coinButton;
+    //UIButton diamonButton;
+    //UIButton coinButton;
 
     private void Awake()
     {
         diamonLabel = transform.Find("DiamondBg/Label").GetComponent<UILabel>();
         coinLabel = transform.Find("CoinBg/Label").GetComponent<UILabel>();
-        diamonButton = transform.Find("DiamondBg/Sprite").GetComponent<UIButton>();
-        coinButton = transform.Find("CoinBg/Sprite").GetComponent<UIButton>();
+        //diamonButton = transform.Find("DiamondBg/Sprite").GetComponent<UIButton>();
+        //coinButton = transform.Find("CoinBg/Sprite").GetComponent<UIButton>();
     }
 
     private void Start()
