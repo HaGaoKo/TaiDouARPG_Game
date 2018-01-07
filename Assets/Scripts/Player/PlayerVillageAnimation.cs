@@ -20,10 +20,7 @@ public class PlayerVillageAnimation : MonoBehaviour {
 
     private void Update()
     {
-        //print(rig.velocity.magnitude);
-        //v = rig.velocity.magnitude;
-        //v3 = rig.velocity;
-        if (rig.velocity.magnitude > 0.1f||ag.enabled)
+        if (rig.velocity.magnitude > 0.1f || ag.enabled)
         {
             anim.SetBool("Move",true);
         }

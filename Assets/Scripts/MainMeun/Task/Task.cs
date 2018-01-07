@@ -33,6 +33,9 @@ public class Task {
     int idTranscript;
     TaskProgress taskProgress = TaskProgress.NoStart;
 
+    public delegate void OnTaskChangeEvent();
+    public event OnTaskChangeEvent OnTaskChange;
+
     #region
     public int Id
     {
@@ -173,7 +176,11 @@ public class Task {
 
         set
         {
-            taskProgress = value;
+            if (taskProgress!= value)
+            {
+                taskProgress = value;
+                OnTaskChange();
+            }
         }
     }
     #endregion

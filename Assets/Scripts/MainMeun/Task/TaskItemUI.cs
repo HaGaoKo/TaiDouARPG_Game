@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TaskItemUI : MonoBehaviour {
 
-    //Task task;
+    Task task;
 
     UISprite tasktyprSprite;
     UISprite iconSprite;
@@ -33,9 +33,29 @@ public class TaskItemUI : MonoBehaviour {
         rewardBtn = transform.Find("RewardButton").GetComponent<UIButton>();
     }
 
-    public void SetTask(Task task)
+    private void Start()
     {
-        //this.task = task;
+        EventDelegate.Add(combatBtn.onClick, OnCombat);
+        EventDelegate.Add(rewardBtn.onClick, OnReward);
+    }
+
+    void OnCombat()
+    {
+        TaskManager._instance.OnExcuteTask(task);
+        TaskUI._instance.Hide();
+    }
+    void OnReward()
+    {
+
+    }
+
+    void OnTaskChange()
+    {
+        UpdateShow();
+    }
+
+    void UpdateShow()
+    {
         switch (task.TaskType)
         {
             case TaskType.Main:
@@ -53,14 +73,14 @@ public class TaskItemUI : MonoBehaviour {
         iconSprite.spriteName = task.Icon;
         nameLabel.text = task.Name;
         desLabel.text = task.Des;
-        if (task.Coin>0 && task.Diamond > 0)
+        if (task.Coin > 0 && task.Diamond > 0)
         {
             reward1Sprite.spriteName = "金币";
             reward1Label.text = "x" + task.Coin;
             reward2Sprite.spriteName = "钻石";
             reward2Label.text = "x" + task.Coin;
         }
-        else if(task.Coin > 0)
+        else if (task.Coin > 0)
         {
             reward1Sprite.spriteName = "金币";
             reward1Label.text = "x" + task.Coin;
@@ -93,5 +113,12 @@ public class TaskItemUI : MonoBehaviour {
             default:
                 break;
         }
+    }
+
+    public void SetTask(Task task)
+    {
+        this.task = task;
+        task.OnTaskChange += OnTaskChange;
+        UpdateShow();
     }
 }

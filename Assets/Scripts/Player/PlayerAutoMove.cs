@@ -20,11 +20,19 @@ public class PlayerAutoMove : MonoBehaviour {
     {
         if (agent.enabled)
         {
-            if (agent.remainingDistance < minDistance)
+            if (agent.remainingDistance < minDistance && agent.remainingDistance!=0)
             {
                 agent.isStopped = true;
                 agent.enabled = false;
+                TaskManager._instance.OnArriveDestination();
             }
+        }
+        //如果在寻路过程中按下移动键，停止自动寻路
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+        if (Mathf.Abs(h) > 0.05f || Mathf.Abs(v) > 0.05f)
+        {
+            StopAuto();
         }
 
         //if (Input.GetKeyDown(KeyCode.Space))
@@ -38,5 +46,14 @@ public class PlayerAutoMove : MonoBehaviour {
     {
         agent.enabled = true;
         agent.SetDestination(targetPos);
+    }
+    /// <summary>停止自动寻路</summary>
+    public void StopAuto()
+    {
+        if (agent.enabled)
+        {
+            agent.isStopped = true;
+            agent.enabled = false;
+        }
     }
 }

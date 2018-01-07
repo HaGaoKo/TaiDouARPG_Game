@@ -7,8 +7,21 @@ public class TaskManager : MonoBehaviour {
     public static TaskManager _instance;
 
     public TextAsset taskinfoText;
-    ArrayList taskList = new ArrayList();
 
+    ArrayList taskList = new ArrayList();
+    Task currentTask;   //保存当前的任务
+    PlayerAutoMove playerAutoMove;
+    PlayerAutoMove PlayerAutoMove
+    {
+        get
+        {
+            if (playerAutoMove == null)
+            {
+                playerAutoMove = GameObject.FindWithTag("Player").GetComponent<PlayerAutoMove>();
+            }
+            return playerAutoMove;
+        }
+    }
     private void Awake()
     {
         _instance = this;
@@ -56,5 +69,35 @@ public class TaskManager : MonoBehaviour {
     public ArrayList GetTaskList()
     {
         return taskList;
+    }
+    /// <summary>执行某个任务</summary>
+    public void OnExcuteTask(Task task)
+    {
+        currentTask = task;
+        if (task.TaskProgress == TaskProgress.NoStart)
+        {//导航到npc处接受任务
+            PlayerAutoMove.SetDestination(NPCManager._instance.GetNpcById(task.IdNPC).transform.position);
+        }
+        else if(task.TaskProgress == TaskProgress.Accept)
+        {
+            PlayerAutoMove.SetDestination(NPCManager._instance.tranScript.position);
+        }
+    }
+
+    public void OnAcceptTask()
+    {
+        currentTask.TaskProgress = TaskProgress.Accept;
+        // 寻路到副本入口
+        PlayerAutoMove.SetDestination(NPCManager._instance.tranScript.position);
+    }
+
+    public void OnArriveDestination()
+    {
+        //到达npc位置
+        if (currentTask.TaskProgress == TaskProgress.NoStart)
+        {
+            NPCDialogUI._instance.Show(currentTask.TalkNPC);
+        }
+        //到达副本入口
     }
 }
