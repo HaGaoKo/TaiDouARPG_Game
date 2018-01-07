@@ -9,9 +9,13 @@ public class NPCManager : MonoBehaviour {
     public GameObject[] npcArray;
     Dictionary<int, GameObject> npcDict = new Dictionary<int, GameObject>();
 
+    /// <summary> 副本入口位置 </summary>
+    public Transform tranScript;
+
     private void Awake()
     {
         _instance = this;
+        Init();
     }
 
     void Init()
