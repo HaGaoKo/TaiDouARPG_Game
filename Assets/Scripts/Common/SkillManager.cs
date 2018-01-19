@@ -5,13 +5,14 @@ using UnityEngine;
 public class SkillManager : MonoBehaviour {
     public static SkillManager _instance;
 
-    TextAsset skillinfoText;
+    public TextAsset skillinfoText;
 
     ArrayList skillList = new ArrayList();
 
     private void Awake()
     {
         _instance = this;
+        InitSkill();
     }
 
     void InitSkill()
@@ -70,5 +71,18 @@ public class SkillManager : MonoBehaviour {
             skill.Level = 1;
             skillList.Add(skill);
         }
+    }
+
+    public Skill GetSkillByPosition(PosType posType)
+    {
+        PlayerInfo info = PlayerInfo._instance;
+        foreach (Skill skill in skillList)
+        {
+            if (skill.PlayerType == info.PlayerType && skill.PosType == posType)
+            {
+                return skill;
+            }
+        }
+        return null;
     }
 }

@@ -40,7 +40,7 @@ public class BottomBar : MonoBehaviour {
     }
     void OnSkillBtnClick()
     {
-        
+        SkillUI._instance.Show();
     }
     void OnCombatBtnClick()
     {

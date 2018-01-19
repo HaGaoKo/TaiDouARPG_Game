@@ -9,10 +9,11 @@ public enum SkillType
 }
 public enum PosType
 {
-    Basic,One,Twe,Three
+    Basic,One,Two,Three
 }
 
-public class Skill  {
+public class Skill
+{
     #region
     int id;
     string name;
@@ -143,4 +144,9 @@ public class Skill  {
         }
     }
     #endregion
+
+    public void Upgrade()
+    {
+        Level++;
+    }
 }

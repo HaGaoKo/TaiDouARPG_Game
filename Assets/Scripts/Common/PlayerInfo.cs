@@ -36,7 +36,7 @@ public class PlayerInfo : MonoBehaviour {
     private int _power = 0;
     private int _exp = 0;
     private int _diamond = 0;
-    private int _coin = 0;
+    private int _coin = -1;
     private int _energy = 0;
     private int _toughen = 0;
     private int _hp;
@@ -438,6 +438,7 @@ public class PlayerInfo : MonoBehaviour {
     private void Awake()
     {
         _instance = this;
+        //Init();
     }
 
     private void Start()
@@ -703,7 +704,7 @@ public class PlayerInfo : MonoBehaviour {
 
     void Init()
     {
-        this.Coin = 9999;
+        this.Coin = 999999;
         this.Diamond = 999;
         this.Energy = 78;
         this.Exp = 123;
