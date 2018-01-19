@@ -120,7 +120,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "btn_2\u8FD4\u56DE1"
     x: 3865
-    y: 3795
+    y: 3493
     width: 150
     height: 150
     borderLeft: 0
@@ -145,19 +145,6 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "btn_2\u8FD4\u56DE3"
-    x: 3023
-    y: 3085
-    width: 150
-    height: 150
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: "btn_2\u8FD4\u56DE4"
     x: 3865
     y: 3644
     width: 150
@@ -170,9 +157,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: "btn_2\u8FD4\u56DE4"
+    x: 3865
+    y: 3795
+    width: 150
+    height: 150
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: "btn_\u516C\u5171\u84DD1"
     x: 923
-    y: 2108
+    y: 1852
     width: 375
     height: 127
     borderLeft: 0
@@ -198,7 +198,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "btn_\u516C\u5171\u84DD3"
     x: 923
-    y: 1980
+    y: 2108
     width: 375
     height: 127
     borderLeft: 0
@@ -211,7 +211,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "btn_\u516C\u5171\u84DD4"
     x: 923
-    y: 1852
+    y: 1980
     width: 375
     height: 127
     borderLeft: 0
@@ -223,8 +223,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "btn_\u5173\u95ED1"
-    x: 3978
-    y: 3418
+    x: 3865
+    y: 3147
     width: 112
     height: 112
     borderLeft: 0
@@ -236,8 +236,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "btn_\u5173\u95ED2"
-    x: 3865
-    y: 3418
+    x: 3978
+    y: 3260
     width: 112
     height: 112
     borderLeft: 0
@@ -249,8 +249,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "btn_\u5173\u95ED3"
-    x: 3978
-    y: 3531
+    x: 3865
+    y: 3260
     width: 112
     height: 112
     borderLeft: 0
@@ -262,8 +262,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "btn_\u5173\u95ED4"
-    x: 3865
-    y: 3531
+    x: 3975
+    y: 3380
     width: 112
     height: 112
     borderLeft: 0
@@ -275,7 +275,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "btn_\u6D41\u75451"
-    x: 1940
+    x: 1351
     y: 2689
     width: 588
     height: 94
@@ -288,6 +288,19 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "btn_\u6D41\u75452"
+    x: 1940
+    y: 2689
+    width: 588
+    height: 94
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: "btn_\u6D41\u75453"
     x: 3208
     y: 3056
     width: 588
@@ -300,21 +313,8 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: "btn_\u6D41\u75453"
-    x: 2529
-    y: 2689
-    width: 588
-    height: 94
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
   - name: "btn_\u6D41\u75454"
-    x: 1351
+    x: 2529
     y: 2689
     width: 588
     height: 94
@@ -353,19 +353,6 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "btn_\u706B\u72061"
-    x: 1939
-    y: 2594
-    width: 587
-    height: 94
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: "btn_\u706B\u72062"
     x: 1351
     y: 2594
     width: 587
@@ -378,9 +365,9 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: "btn_\u706B\u72063"
-    x: 3118
-    y: 2689
+  - name: "btn_\u706B\u72062"
+    x: 1939
+    y: 2594
     width: 587
     height: 94
     borderLeft: 0
@@ -391,7 +378,7 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: "btn_\u706B\u72064"
+  - name: "btn_\u706B\u72063"
     x: 2527
     y: 2594
     width: 587
@@ -404,9 +391,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: "btn_\u706B\u72064"
+    x: 3118
+    y: 2689
+    width: 587
+    height: 94
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: "btn_\u7EA21"
     x: 923
-    y: 2373
+    y: 2236
     width: 427
     height: 136
     borderLeft: 0
@@ -419,7 +419,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "btn_\u7EA22"
     x: 923
-    y: 2236
+    y: 2373
     width: 427
     height: 136
     borderLeft: 0
@@ -613,8 +613,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 8
   - name: "pic_\u8FDB\u5EA6\u6761\u7279\u6548"
-    x: 3174
-    y: 3198
+    x: 3023
+    y: 3018
     width: 16
     height: 37
     borderLeft: 0
@@ -625,8 +625,73 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: "star-\u7070\u8272"
+    x: 3797
+    y: 3101
+    width: 52
+    height: 49
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: "star-\u9EC4\u8272"
+    x: 3797
+    y: 3051
+    width: 48
+    height: 49
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: "\u5730\u56FE-\u666E\u901A"
+    x: 3023
+    y: 3056
+    width: 171
+    height: 179
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: "\u5730\u56FE-\u7BB1\u5B50"
+    x: 3865
+    y: 3373
+    width: 109
+    height: 119
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: "\u5730\u56FE-\u7CBE\u82F1"
+    x: 3978
+    y: 3150
+    width: 104
+    height: 109
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 3
+    paddingBottom: 0
   - name: "\u6DF1\u84DD2"
-    x: 1790
+    x: 2229
     y: 2499
     width: 438
     height: 94
@@ -639,7 +704,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "\u6DF1\u84DD3"
-    x: 2229
+    x: 1790
     y: 2499
     width: 438
     height: 94
