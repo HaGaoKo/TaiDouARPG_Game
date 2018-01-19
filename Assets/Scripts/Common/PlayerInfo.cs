@@ -19,6 +19,12 @@ public enum InfoType
     All
 }
 
+public enum PlayerType
+{
+    Warrior,
+    FemaleAssassin,
+}
+
 public class PlayerInfo : MonoBehaviour {
 
     public static PlayerInfo _instance;
@@ -35,6 +41,7 @@ public class PlayerInfo : MonoBehaviour {
     private int _toughen = 0;
     private int _hp;
     private int _damage;
+    private PlayerType _playerType;
     //private int _helmID=0;
     //private int _closhID=0;
     //private int _weaponID=0;
@@ -305,6 +312,19 @@ public class PlayerInfo : MonoBehaviour {
         set
         {
             _wingInventory = value;
+        }
+    }
+
+    public PlayerType PlayerType
+    {
+        get
+        {
+            return _playerType;
+        }
+
+        set
+        {
+            _playerType = value;
         }
     }
 
