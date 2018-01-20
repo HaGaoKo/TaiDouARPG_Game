@@ -6,9 +6,11 @@ public class PlayerMove : MonoBehaviour {
 
     public float speed = 5;
     Rigidbody rig;
+    Animator anim;
     private void Awake()
     {
         rig = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -18,10 +20,20 @@ public class PlayerMove : MonoBehaviour {
         Vector3 nowVel = rig.velocity;
         if (Mathf.Abs(h) > 0.05f || Mathf.Abs(v) > 0.05f)
         {
-            rig.velocity = new Vector3(speed * h, nowVel.y, speed * v);
+            anim.SetBool("Move", true);
+            if (anim.GetCurrentAnimatorStateInfo(1).IsName("Empty"))
+            {
+                rig.velocity = new Vector3(speed * h, nowVel.y, speed * v);
+                transform.LookAt(new Vector3(h, 0, v) + transform.position);
+            }
+            else
+            {
+                rig.velocity = new Vector3(0, nowVel.y, 0);
+            }
         }
         else
         {
+            anim.SetBool("Move", false);
             rig.velocity = new Vector3(0, nowVel.y, 0);
         }
     }
