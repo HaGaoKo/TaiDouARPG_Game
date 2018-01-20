@@ -173,7 +173,7 @@ ModelImporter:
     2100002: 'Material #42'
     4300000: ce01_leg01
     4300002: lod1
-    7400000: Take 001
+    7400000: run
     9500000: //RootNode
     11100000: //RootNode
     13700000: ce01_leg01
@@ -216,7 +216,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: run
       takeName: Take 001
       firstFrame: 0
       lastFrame: 18

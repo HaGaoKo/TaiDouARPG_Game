@@ -9,7 +9,7 @@ public enum SkillType
 }
 public enum PosType
 {
-    Basic,One,Two,Three
+    Basic,One=1,Two,Three
 }
 
 public class Skill
